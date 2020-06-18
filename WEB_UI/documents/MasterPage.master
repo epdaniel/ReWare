@@ -1,0 +1,235 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="documents_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+	<link href="/documents/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="/documents/fav/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/documents/fav/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/documents/fav/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/documents/fav/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/documents/fav/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/documents/fav/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/documents/fav/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/documents/fav/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/documents/fav/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/documents/fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/documents/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/documents/fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/documents/fav/favicon-16x16.png">
+	<link rel="manifest" href="/documents/fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/documents/fav/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<style>
+		a {
+			color: black;
+		}
+
+		p, span, a {
+			font-size: 1rem;
+		}
+
+		h1, h2, h3, h4, h5, h6, p, span, a, div, small {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 400;
+		}
+	</style>
+</head>
+<body>
+	<link href="StyleSheet.css" rel="stylesheet" />
+	<form id="form1" runat="server">
+
+		<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+			<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+				<img src="imgs/logo.png" style="width: 180px;" /></a>
+			<button class="navbar-toggler position-absolute d-md-none collapsed" style="top: 10px !important;" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<%--  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">--%>
+			<ul class="navbar-nav px-3">
+				<li class="nav-item text-nowrap">
+					<%--<a class="nav-link" href="#">Sign out</a>--%>
+				</li>
+			</ul>
+		</nav>
+		<%--        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+                <img src="imgs/logo.png" style="width: 180px;" /></a>
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>--%>
+		<%--  <nav class="navbar navbar-dark sticky-top bg-dark   shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+                <img src="imgs/logo.png" style="width: 100px;" /></a>
+            <button class="navbar-toggler position-fixed d-md-none collapsed " style="right: 10px !important;" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>--%>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+					<div class="sidebar-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+
+								<a class="nav-link " href="/documents/Introduction.aspx">
+									<span data-feather="home"></span>
+									Introduction
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/Requirements.aspx">
+									<span data-feather="file"></span>
+									Requirements
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/designdocument.aspx">
+									<span data-feather="file"></span>
+									Design document
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/usermanual.aspx">
+									<span data-feather="coffee"></span>
+									User manual
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/tests.aspx">
+									<span data-feather="layers"></span>
+									Testing
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/maintenanceguide.aspx">
+									<span data-feather="settings"></span>
+									Maintenance guide
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/tutorials.aspx">
+									<span data-feather="youtube"></span>
+									Tutorials
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/it2summary.aspx#problems">
+									<span data-feather="alert-triangle"></span>
+									Problems encountered
+								</a>
+							</li>
+						</ul>
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>Code</span>
+							<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report"></a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item">
+								<a class="nav-link" target="_blank" href="https://git.tlabs.bgu.ac.il/basslio/reware.git">
+									<span data-feather="gitlab"></span>
+									Gitlab repository
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/Agentapi.aspx">
+									<span data-feather="code"></span>
+									Agent API
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/CNCapi.aspx">
+									<span data-feather="code"></span>
+									CNC API
+								</a>
+							</li>
+
+
+						</ul>
+
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>Updates</span>
+							<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report"></a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/it2summary.aspx">
+									<span data-feather="package"></span>
+									Iteration 2 Summary
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/it3summary.aspx">
+									<span data-feather="package"></span>
+									Iteration 3 Summary
+								</a>
+							</li>
+
+
+
+						</ul>
+
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>More</span>
+							<a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report"></a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/qa.aspx">
+									<span data-feather="alert-circle"></span>
+									Q&A
+								</a>
+							</li>
+
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/documents/team.aspx">
+									<span data-feather="users"></span>
+									Team
+								</a>
+							</li>
+
+
+						</ul>
+					</div>
+				</nav>
+
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<div class="m-2 p-1 w-100">
+							<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+							</asp:ContentPlaceHolder>
+						</div>
+					</div>
+
+					<div>© ReWare 2019/2020</div>
+				</main>
+			</div>
+		</div>
+
+
+		<script>
+			feather.replace()
+		</script>
+
+	</form>
+
+
+</body>
+</html>

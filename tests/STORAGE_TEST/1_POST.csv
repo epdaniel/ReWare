@@ -1,0 +1,13 @@
+HostName,DateTime,IOCType,IOCPath,OperationType,OpResult,Info
+169.254.238.85,2020-06-07 15:38:22.704090,File,c:\windows\system32\28643,Create,Failed,name 'time' is not defined
+169.254.238.85,2020-06-07 15:38:22.712874,File,c:\users\Administrator\appdata\local\@28640.zip,Create,Failed,[WinError 3] The system cannot find the path specified: 'c:\\\\users\\\\Administrator\\\\appdata\\\\local\\\\@28640.zip'
+169.254.238.85,2020-06-07 15:38:22.719708,File,c:\windows\system32\28643,Modify,Success
+169.254.238.85,2020-06-07 15:38:22.728489,File,c:\users\Administrator\appdata\local\temp,Create,Failed,[WinError 3] The system cannot find the path specified: 'c:\\\\users\\\\Administrator\\\\appdata\\\\local\\\\temp'
+169.254.238.85,2020-06-07 15:38:22.737274,Registry,HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\DPBJ Agent,Create,Success
+169.254.238.85,2020-06-07 15:38:22.746062,File,c:\windows\system32\28643\2020052512,Create,Failed,[WinError 2] The system cannot find the file specified: 'c:\\\\windows\\\\system32\\\\28643\\\\2020052512'
+169.254.238.85,2020-06-07 15:38:48.251577,File,c:\windows\system32\28643,Create,Failed,name 'time' is not defined
+169.254.238.85,2020-06-07 15:38:48.261346,File,c:\users\Administrator\appdata\local\@28640.zip,Create,Failed,[WinError 3] The system cannot find the path specified: 'c:\\\\users\\\\Administrator\\\\appdata\\\\local\\\\@28640.zip'
+169.254.238.85,2020-06-07 15:38:48.270120,File,c:\windows\system32\28643,Modify,Success
+169.254.238.85,2020-06-07 15:38:48.278906,File,c:\users\Administrator\appdata\local\temp,Create,Failed,[WinError 3] The system cannot find the path specified: 'c:\\\\users\\\\Administrator\\\\appdata\\\\local\\\\temp'
+169.254.238.85,2020-06-07 15:38:48.288665,Registry,HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\DPBJ Agent,Create,Success
+169.254.238.85,2020-06-07 15:38:48.298426,File,c:\windows\system32\28643\2020052512,Create,Failed,[WinError 2] The system cannot find the file specified: 'c:\\\\windows\\\\system32\\\\28643\\\\2020052512'

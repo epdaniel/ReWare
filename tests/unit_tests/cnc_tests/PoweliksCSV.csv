@@ -1,0 +1,33 @@
+HostName,DateTime,IOCType,IOCPath,OperationType,OpResult
+epo-server,2020-06-08 15:55:53.711000,File,C:\Poweliks\logs.txt,Created,Completed
+
+epo-server,2020-06-08 15:55:53.713000,File,C:\csvlog\Poweliks-a3a88bc6-268a-4561-a774-a42dc2f5e1f0.csv,Created,Completed
+
+epo-server,2020-06-08 15:55:59.905000,Registry,HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Internet Settings\Auto detect\Poweliks,Created,Completed
+
+epo-server,2020-06-08 15:55:59.913000,Registry,HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Poweliks,Created,Completed
+
+epo-server,2020-06-08 15:55:59.922000,Registry,HKEY_CURRENT_USER\software\microsoft\windows\currentVersion\Run\Poweliks,Created,Completed
+
+epo-server,2020-06-08 15:56:02.949000,File,%Homedrive%%Homepath%\ntuser.dat.LOG,Created,Completed
+
+epo-server,2020-06-08 15:56:02.972000,File,%Homedrive%%Homepath%\ntuser.dat.LOG,Deleted,Completed
+
+epo-server,2020-06-08 15:56:48.344000,Process,powershell.exe,Created,Completed
+
+epo-server,2020-06-08 15:56:48.344000,Registry,HKLM\System\CurrentControlSet\Services\ServiceTest\,Created,Completed
+
+epo-server,2020-06-08 15:56:48.344000,Process,powershell.exe,Deleted,Completed
+
+epo-server,2020-06-08 15:56:48.344000,Registry,HKLM\System\CurrentControlSet\Services\ServiceTest\,Deleted,Completed
+
+epo-server,2020-06-08 15:57:30.884000,Process,rundll32.exe,Created,Completed
+
+epo-server,2020-06-08 15:57:30.884000,Registry,HKLM\System\CurrentControlSet\Services\ServiceTest\,Created,Completed
+
+epo-server,2020-06-08 15:57:30.884000,Process,rundll32.exe,Deleted,Completed
+
+epo-server,2020-06-08 15:57:30.884000,Registry,HKLM\System\CurrentControlSet\Services\ServiceTest\,Deleted,Completed
+
+epo-server,2020-06-08 15:57:48.932000,Process,python.exe,Created,Completed
+

@@ -1,0 +1,28 @@
+flask
+numpy
+hydra-code
+pyinstaller
+requests
+eventlet
+
+flask
+numpy
+hydra-code
+pyinstaller
+
+pandas
+IPy
+/*******SHADI PACKAGES*******/
+pip install Flask-Session
+pip install pyodbc
+pip install flask-login
+
+/********* MYSQL CLIENT - DOWNLOAD LINK *******/
+/*******https://dev.mysql.com/downloads/installer/******/
+"""
+Using Facebooks hydra package for configs and cli.
+for info check:
+https://cli.dev/docs/
+"""
+
+

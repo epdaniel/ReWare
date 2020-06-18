@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ControPanel.master.cs" Inherits="cpanel_PC_MasterPage_ControPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ReWare</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <style>
+        hr {
+            border-top: 1px solid #adb5bd;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f5f9fc;
+        }
+
+        span {
+            font-family: "segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #Top_header {
+            height: 55px;
+            left: 0px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #2e2e2e;
+            border-bottom: 1px solid #000;
+            z-index: 999;
+            background: #161c25;
+            /*background: linear-gradient(90deg,#FFFFFF 90%, rgba(38,47,61,1) 200px);*/
+        }
+
+            #Top_header .text {
+                font-size: 12px;
+                text-align: center;
+                color: white;
+            }
+
+        .li_pointer {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        #Left_header {
+            height: 100%;
+            width: 220px;
+            position: absolute;
+            left: 0;
+            top: 55px;
+            background-color: #262f3d;
+            position: fixed;
+        }
+
+            #Left_header span {
+                color: #adb5bd;
+            }
+
+                #Left_header span:hover {
+                    color: white;
+                }
+
+        #Page {
+            margin: 68px 8px 20px 225px;
+        }
+        /*********Gride View*********/
+        .table_header {
+            background-color: #262f3d;
+            color: white;
+            height: 40px;
+        }
+
+        .table_row {
+            background-color: #fbfbfb;
+            color: #262f3d;
+            height: 40px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+
+       <div id="Top_header">
+            <img src="/IMG_SYS/LOGO_300.png" style="height: 38px; top: 8px; left: 15px; position: relative;" />
+            <img src="/cpanel/PC/masterpage/icons/icons8-user-100.png" style="position: absolute; right: 100px; top: 8px; width: 40px;" />
+            <div style="position: absolute; right: 20px; top: 10px;">
+                <div class="text"><%=Session["fullname"].ToString() %></div>
+                <div style="text-align: center">
+                    <asp:Label ID="Label1" class="text" runat="server"><%=Session["id_number"].ToString() %></asp:Label>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="Left_header">
+
+            <div style="padding-top: 10px;">
+                <h6 class="dropdown-header"># MAIN MENU</h6>
+                <ul>
+                    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="USER_Categories">
+                        <ItemTemplate>
+                            <li class="li_pointer" style="list-style: none;" onclick="location.href='/cpanel/pc/Redirect.aspx?url=<%# Eval("Category_url_name") %>'">
+                                <img src="/cpanel/PC/masterpage/icons/<%#Eval("Category_icon") %>.png" style="position: absolute; left: 20px; width:20px; height:20px;" />
+                                <span style="position: relative; bottom: 2px;"><%#Eval("Category_name") %></span>
+                                <div style="left: 15px; bottom: 2px; position: relative;" class="badge badge-primary text-wrap"><%#Eval("note") %></div>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <asp:SqlDataSource ID="USER_Categories" runat="server" ConnectionString="<%$ ConnectionStrings:ReWareConnectionString %>" SelectCommand="SELECT * FROM ControlPanelUsersCategories,SystemCategories where ControlPanelUsersCategories.Category_id = SystemCategories.id and ControlPanelUsersCategories.User_id=@id order by tag_order ">
+                        <SelectParameters>
+                            <asp:SessionParameter SessionField="id" Name="id" Type="Int32" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <asp:Button ID="btnLogOut" runat="server" Text="LogOut" Style="width: 80%;" CssClass="btn btn-md btn-outline-light" OnClick="btnLogOut_Click" />
+            </div>
+        </div>
+
+
+        <div id="Page">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder_main" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <div style="position: absolute; bottom: 5px; left: -2px;">
+            <h6 class="dropdown-header" style="text-align: center!important">© COPYRIGHTS RESERVED</h6>
+        </div>
+    </form>
+</body>
+</html>
+<!-- 
+       
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+    -->

@@ -1,0 +1,39 @@
+HostName,DateTime,IOCType,IOCPath,OperationType,OpResult
+epo-server,2020-06-08 11:32:44.354000,File,C:\Ardamax\logs.txt,Created,Completed
+
+epo-server,2020-06-08 11:32:44.355000,File,C:\csvlog\Ardamax-b7e70192-ff02-4dac-b48a-44c9605c15d8.csv,Created,Completed
+
+epo-server,2020-06-08 11:32:46.385000,File,c:\users\%USERNAME%\appdata\local\@28640.zip,Created,Completed
+
+epo-server,2020-06-08 11:32:46.387000,Folder,c:\windows\system32\28643,Created,Completed
+
+epo-server,2020-06-08 11:32:46.401000,File,c:\windows\system32\28643\DPBJ.exe,Created,Completed
+
+epo-server,2020-06-08 11:32:46.417000,File,c:\windows\system32\28643\DPBJ0021.dll,Created,Completed
+
+epo-server,2020-06-08 11:32:46.432000,File,c:\windows\system32\28643\DPBJ009.dat,Created,Completed
+
+epo-server,2020-06-08 11:32:46.446000,File,c:\windows\system32\28643\AKV.exe,Created,Completed
+
+epo-server,2020-06-08 11:32:46.463000,File,c:\windows\system32\28643\DPBJ003.rar,Created,Completed
+
+epo-server,2020-06-08 11:32:46.479000,File,c:\windows\system32\28643\key.bin,Created,Completed
+
+epo-server,2020-06-08 11:32:46.502000,File,c:\windows\system32\28643,Updated,Completed
+
+epo-server,2020-06-08 11:32:47.518000,File,c:\windows\system32\28643\esihdrv.sys,Created,Completed
+
+epo-server,2020-06-08 11:32:47.523000,Registry,HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\DPBJ Agent,Created,Completed
+
+epo-server,2020-06-08 11:33:00.841000,Folder,c:\windows\system32\28643\2020060800,Created,Completed
+
+epo-server,2020-06-08 11:33:12.916000,File,c:\windows\system32\28643\2020060800\0.bmp,Created,Completed
+
+epo-server,2020-06-08 11:33:24.980000,File,c:\windows\system32\28643\2020060800\12.bmp,Created,Completed
+
+epo-server,2020-06-08 11:33:37.040000,File,c:\windows\system32\28643\2020060800\24.bmp,Created,Completed
+
+epo-server,2020-06-08 11:33:49.090000,File,c:\windows\system32\28643\2020060800\36.bmp,Created,Completed
+
+epo-server,2020-06-08 11:34:01.301000,File,c:\windows\system32\28643\2020060800\48.bmp,Created,Completed
+

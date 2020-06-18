@@ -1,0 +1,7 @@
+id=42
+pre_c='pre.exe'
+in_c='in.exe'
+exe_c='malware.exe'
+post_c='post.exe'
+time_out= 100
+        

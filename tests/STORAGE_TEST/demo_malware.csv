@@ -1,0 +1,2 @@
+HostName,DateTime,IOCType,IOCPath,OperationType,OpResult
+127.0.0.1,2019-12-22 15:53:47.709027,Folder,c:\temp_deletemeplease,Created,Completed

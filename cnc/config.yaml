@@ -1,0 +1,7 @@
+db:
+  driver: 'mysql'
+  user: 'root'
+  pass: '1234'
+logger:
+  level: 'debugg'
+  path: '\logging\l.log'
